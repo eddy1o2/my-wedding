@@ -2,5 +2,6 @@
 
 Personal project for my wedding
 ## Tech stack
-- Static web (HTML + CSS)
+- Javascript
+- HTML + CSS
 - Vercel (Deployment)
