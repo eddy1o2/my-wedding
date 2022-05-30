@@ -21,8 +21,14 @@
           href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/base/jquery-ui.css?ver=4.6.9' media='all'/>
     <link rel='stylesheet' id='wedding-fonts-css'
           href='https://fonts.googleapis.com/css?family=Bree+Serif%7CLato&#038;ver=1.0.0' media='all'/>
+          
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    
+    <script>
+        $( "#new-projects" ).load( "/resources/load.html #projects li" );
+        </script>
+        
     <script>
         /*  */
         var rsvp_plugin_vars = {
@@ -829,20 +835,125 @@
                     </div>
                 </section>
             </div>
-            <section class="wed_section_inner wed_image_bck wed_wht_txt wed_fixed  "
-                     style=background-image:url(images/bg.jpg); data-stellar-background-ratio="0.2">
-                <div class="wed_over" data-color="#edc082" data-opacity="0.9"></div>
-                <div class="container text-center">
-                    <div class="wed_thin_titles">
-                        <h2>“ The best gift is your patecipation, thanks to all ”</h2>
+           
+
+            <div id="messages" class="section aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+  
+                <link href="./css/form.css" rel="stylesheet">
+                <link href="./css/main.css" rel="stylesheet">
+                <link href="./css/messages.css" rel="stylesheet">
+                <link href="./css/boostrap.css" rel="stylesheet">
+                <script src="/components/messages/messages.js"></script>
+            
+                <link href="./css/pagination.css" rel="stylesheet">
+                <script src="/assets/js/pagination.js"></script>
+              
+              
+                <div class="container--center">
+                  <div class="container__title">
+                    <h1 class="title--big">Sweet Messages</h1>
+                    <img src="./images/section-divider.svg" class="section-divider" alt="section-divider">
+                  </div>
+            
+                  <div id="container-messages" class="messages-background overlay-pink">
+                    <div id="messages-input" data-aos="fade-down" data-aos-duration="1000" class="aos-init aos-animate">
+                      <div id="form-background">
+                        <div>
+                          <h3 class="form-title thin-heading mb-2">Message Us</h3>
+                          <form id="form-messages" action="" novalidate="novalidate">
+                            <label class="form-label">
+                              <p class="label-txt">Your name</p>
+                              <div class="row">
+                                <input type="text" class="input" name="name" id="message-name">
+                                <div class="line-box">
+                                  <div class="line"></div>
+                                  <label id="message-name-error" class="error" for="message-name"></label>
+                                </div>
+                              </div>
+                            </label>
+                            <label class="form-label">
+                              <p class="label-txt">Write your messages</p>
+                              <div class="row">
+                                <textarea class="input hide-scrollbar" name="content" id="message-content" wrap="soft" rows="1"></textarea>
+                                <div class="line-box">
+                                  <div class="line"></div>
+                                  <label id="message-content-error" class="error" for="message-content"></label>
+                                </div>
+                              </div>
+                            </label>
+                            <div id="btn-send">
+                              <button type="submit" class="button-38 mt-2">Send Message</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
-                    <div class="fw-row">
-                        <div class="fw-col-xs-12 enh_push_none  wed_image_bck   wed_col">
-                            <div class="  "></div>
+            
+                    <div id="messages-carousel" data-aos="fade-up" data-aos-duration="1000" class="aos-init aos-animate">
+                      <div class="messages-wrapper">
+                        <div id="messages-list">
+                <div class="item-loop item">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Huỳnh Jennny</h5>
+                          <p class="card-text">Chúc  hai em  mãi mãi hạnh  phúc  </p>
                         </div>
                     </div>
-                </div>
-            </section>
+                </div><div class="item-loop item">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Huy Phan</h5>
+                          <p class="card-text">Chúc mừng anh chị &lt;3</p>
+                        </div>
+                    </div>
+                </div><div class="item-loop item">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Peter</h5>
+                          <p class="card-text">I hope through the years you become even better friends and share every possible kind of happiness life can bring. Congrats.</p>
+                        </div>
+                    </div>
+                </div><div class="item-loop item">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Huy nè</h5>
+                          <p class="card-text">Hãy nháy mắt 3 lần để gửi tính hiệu ét ô ét cho tụi em nha anh Tấn</p>
+                        </div>
+                    </div>
+                </div><div class="item-loop item">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Nathan Nguyen (Dinh Nguyen)</h5>
+                          <p class="card-text">May you cure my cousin’s craziness :3</p>
+                        </div>
+                    </div>
+                </div><div class="item-loop item">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Thi cute</h5>
+                          <p class="card-text">Happy wedding!!!</p>
+                        </div>
+                    </div>
+                </div></div><div class="pagination"><span class="pagination-button pagination-prev">ᐸ</span><span class="pagination-button page-num active">3</span><span class="pagination-button pagination-next">ᐳ</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>           
+            </div>
+            <section class="wed_section_inner wed_image_bck wed_wht_txt wed_fixed  "
+            style=background-image:url(images/bg.jpg); data-stellar-background-ratio="0.2">
+       <div class="wed_over" data-color="#edc082" data-opacity="0.9"></div>
+       <div class="container text-center">
+           <div class="wed_thin_titles">
+               <h2>“ The best gift is your patecipation, thanks to all ”</h2>
+           </div>
+           <div class="fw-row">
+               <div class="fw-col-xs-12 enh_push_none  wed_image_bck   wed_col">
+                   <div class="  "></div>
+               </div>
+           </div>
+       </div>
+   </section>
         </div>
         <footer class="wed_footer">
         </footer>
