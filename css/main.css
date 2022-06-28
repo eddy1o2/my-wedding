@@ -27,7 +27,7 @@ body {
 
 .section {
   width: 100%;
-  min-height: 100vh;
+  min-height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ body {
   flex-flow: column;
 }
 
-.container--center::after {
+/* .container--center::after {
   content: "";
   display: block;
   height: 50px;
@@ -59,7 +59,7 @@ body {
   background: url(../images/white_rough_edge_top.png) center center repeat-x;
   z-index: 6;
   width: 100%;
-}
+} */
 
 .wrapper--center {
   display: flex;
